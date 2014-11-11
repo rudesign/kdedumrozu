@@ -9,6 +9,6 @@ $set = array(
 );
 
 foreach($set as $alias=>$name) {
-    echo '<a href="/'.$alias.'/" class="'.(Core::$item['alias'] == $alias ? 'active ' : '').'f0"><i></i><span>'.$name.'</span></a>';
+    echo '<a href="/'.$alias.'/" class="'.(Router::$request->parsed->origin[0] == $alias ? 'active ' : '').'f0"><i></i><span>'.$name.'</span></a>';
 }
 ?>
