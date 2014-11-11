@@ -2,7 +2,7 @@
 
 $query = Inner::set();
 $query->condition = 'tour > 0';
-$query->order = 'name ASC';
+$query->order = 'ord ASC';
 $set = Inner::get($query);
 
 $i =0;

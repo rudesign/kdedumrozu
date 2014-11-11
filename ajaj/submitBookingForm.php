@@ -21,13 +21,9 @@ class Ajaj{
     {
         $data = array();
 
-        if($_POST['hotel']){
-            if($hotel = Hotels::getById((int) $_POST['hotel'])){
-                $data[] = array('name'=>'Отель', 'value'=>$hotel['name']);
-                if($hotel['resort']){
-                    $resort = Resorts::getById($hotel['resort']);
-                    $data[] = array('name'=>'Курорт', 'value'=>$resort['name']);
-                }
+        if($_POST['tour']){
+            if($row = Inner::getById((int) $_POST['tour'])){
+                $data[] = array('name'=>'Тур', 'value'=>$row['name']);
             }
         }
 
