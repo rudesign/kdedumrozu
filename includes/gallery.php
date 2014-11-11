@@ -12,7 +12,6 @@ if(!empty(Core::$item['gallery'])){
                     echo '
                     <li>
                         <a href="/images/big/'.$item[0].'" title="'.$item[1].'" class="fancybox" rel="gallery"><img src="/images/small/'.$item[0].'" /></a>
-                        <span class="teaser">'.($item[1] ? $item[1] : '&nbsp;').'</span>
                     </li>';
                 }
                 echo '

@@ -300,6 +300,46 @@ img {
 .ck-body img {
   display: inline-block; }
 
+.photo-gallery-teaser .jcarousel-wrapper {
+  position: relative; }
+
+.photo-gallery-teaser .jcarousel {
+  width: 555px;
+  margin: 0 auto; }
+
+.photo-gallery-teaser .jcarousel li {
+  width: 168px;
+  margin-right: 25px;
+  position: relative;
+  text-align: center; }
+
+.photo-gallery-teaser .jcarousel li:last-child {
+  margin-right: 0; }
+
+.photo-gallery-teaser .jcarousel li .teaser {
+  display: block;
+  width: 90%;
+  margin: 6px auto 0; }
+
+.photo-gallery-teaser .jcarousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 33px;
+  margin-top: -26px;
+  background-image: url("../img/shift.png"); }
+
+.photo-gallery-teaser .jcarousel-controls.prev {
+  left: 0; }
+
+.photo-gallery-teaser .jcarousel-controls.next {
+  right: 0;
+  background-position: -18px 0; }
+
+.photo-gallery-teaser .name {
+  font-size: 24px;
+  line-height: 1.1em; }
+
 .content-wrapper {
   width: 800px;
   margin: 0 auto; }
