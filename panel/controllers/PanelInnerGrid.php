@@ -9,6 +9,7 @@ class PanelInnerGrid extends PanelGrid{
         parent::__construct();
 
         $this->checkboxes = array(
+            'tour',
             'menu',
             'sitemap',
             'footer',
@@ -23,6 +24,9 @@ class PanelInnerGrid extends PanelGrid{
 
             <dl>Название</dl>
             <dt><input name="name" value="'.Core::$item['name'].'" type="text" class="fw" /></dt>
+            <dt>
+                <input name="tour" value="1" type="checkbox"'.$this->checkboxes['tour']['checked'].' /><label>в основном меню</label>
+            </dt>
             <dl>Вышележащий раздел</dl>';
             $query = Inner::set();
             $query->visibleOnly = false;

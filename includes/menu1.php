@@ -1,14 +1,13 @@
 <?php class_exists('Core', false) or die();
 
-$set = array(
-    'ded-moroz-iz-velikogo-ustjuga'=>'Дед Мороз из Великого Устюга',
-    'belorusskiy-ded-moroz'=>'Белорусский Дед Мороз',
-    'santa-klaus-iz-laplandii'=>'Санта-Клаус из Лапландии',
-    'kostromskaya-snegurochka'=>'Костромская Снегурочка',
-    'karelskiy-ded-moroz'=>'Карельский Дед Мороз',
-);
+$query = Inner::set();
+$query->condition = 'tour > 0';
+$query->order = 'name ASC';
+$set = Inner::get($query);
 
-foreach($set as $alias=>$name) {
-    echo '<a href="/'.$alias.'/" class="'.(Router::$request->parsed->origin[0] == $alias ? 'active ' : '').'f0"><i></i><span>'.$name.'</span></a>';
+$i =0;
+foreach($set as $row) {
+    echo '<a href="/'.$alias.'/" class="'.(Router::$request->parsed->origin[0] == $row['alias'] ? 'active ' : '').'f'.$i.'"><i></i><span>'.$row['name'].'</span></a>';
+    $i++;
 }
 ?>

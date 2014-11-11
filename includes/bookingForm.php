@@ -1,8 +1,9 @@
 <?php class_exists('Core', false) or die();
 
-$query = Hotels::set();
+$query = Inner::set();
+$query->condition = 'tour > 0';
 $query->order = 'name ASC';
-$hotels = Hotels::get($query);
+$set = Inner::get($query);
 
 echo '
 <div class="lm small booking-form">
@@ -10,13 +11,13 @@ echo '
         <div class="section">
             <div class="row-wrapper">
                 <div class="row">
-                    <div class="cell">Отель:</div>
+                    <div class="cell">Тур:</div>
                     <div class="cell">
-                        <select name="hotel" class="w100 customSelect">
+                        <select name="tour" class="w100 customSelect">
                             <option value="0">Не имеет значения</option>';
-                            foreach($hotels as $row){
+                            foreach($set as $row){
                                 echo '
-                                <option value="'.$row['id'].'"'.($_GET['hotel'] == $row['id'] ? ' selected' : '').'>'.$row['name'].'</option>';
+                                <option value="'.$row['id'].'"'.($_GET['tour'] == $row['id'] ? ' selected' : '').'>'.$row['name'].'</option>';
                             }
                             echo '
                         </select>
