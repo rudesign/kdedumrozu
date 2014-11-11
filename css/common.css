@@ -322,14 +322,14 @@ img {
   top: 50%;
   width: 18px;
   height: 33px;
-  margin-top: -26px;
+  margin-top: -16px;
   background-image: url("../img/shift.png"); }
 
 .photo-gallery-teaser .jcarousel-controls.prev {
-  left: 0; }
+  left: 5px; }
 
 .photo-gallery-teaser .jcarousel-controls.next {
-  right: 0;
+  right: 5px;
   background-position: -18px 0; }
 
 .photo-gallery-teaser .name {
