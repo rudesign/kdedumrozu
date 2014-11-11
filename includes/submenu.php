@@ -10,5 +10,5 @@ if($rows = Inner::get($query)){
             echo '<li><a href="/'.$row['alias'].'/">'.$row['name'].'</a></li>';
         }
     echo '</ul> ';
-}else echo $query->string;
+}
 ?>
