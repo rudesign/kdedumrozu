@@ -1,0 +1,127 @@
+.datepicker{
+  position: relative;
+}
+.datepicker img{
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  right: 7px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select
+{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border:1px solid #b7bfcf;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 6px 10px;
+}
+
+input[type="radio"]{
+  margin: 0 0.5em;
+}
+
+.buttons{
+  @extend .box;
+  @include border-radius(4px);
+  display: inline-block;
+  padding: 7px 13px 8px;
+  border: none;
+  white-space: nowrap;
+  line-height: 1em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0096ff;
+  color: #FFFFFF;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+.buttons:hover{
+  background-color: #33abff;
+}
+
+.booking-form{
+  padding: 25px 0;
+}
+.booking-form .row-wrapper{
+  margin-bottom: 12px;
+}
+.booking-form .row{
+  display: table-row;
+}
+.booking-form .cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+.booking-form .cell:first-child{
+  width: 240px;
+  padding-right: 15px;
+  text-align: right;
+}
+.booking-form .cell:last-child{
+  width: 240px;
+}
+.booking-form .cell.vat{
+  vertical-align: top;
+}
+
+.teaser .callback-form{
+  display: none;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+}
+.teaser .callback-form .inner{
+  width: 300px;
+  height: 218px;
+  padding: 30px 30px 0;
+  margin: 0 auto;
+  background-color: $red;
+  color: white;
+  a{
+    color: white;
+  }
+}
+.teaser .callback-form input{
+  margin-bottom: 0;
+}
+.teaser .callback-form input[type="text"]{
+  width: 100%;
+  text-align: left;
+}
+.teaser .callback-form .table{
+  width: 280px;
+}
+.teaser .callback-form .td{
+  padding-bottom: 10px;
+}
+.teaser .callback-form .tr .td:first-child{
+  width: 45px;
+  padding-right: 5px;
+  text-align: right;
+}
+.teaser .callback-form .captcha .td{
+  padding-right: 17px;
+}
+.teaser .callback-form .captcha .td:last-child{
+  padding-right: 0;
+}
+.teaser .callback-form button{
+  @extend .shadow;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ff8400;
+}
+.teaser .callback-form button:hover{
+  background-color: #e17400;
+}
+.teaser .close{
+  padding-left: 50px;
+}

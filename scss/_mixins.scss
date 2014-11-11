@@ -1,0 +1,21 @@
+.left{ float: left; }
+.right{ float: right; }
+
+.box{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin border-radius($radius){
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+.shadow{
+  box-shadow: 0 1px 1px #e17400;
+  -moz-box-shadow: 0 1px 1px #e17400;
+  -weblit-box-shadow: 0 1px 1px #e17400;
+}
