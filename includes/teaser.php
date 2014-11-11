@@ -11,7 +11,7 @@ echo '
     <div class="callback-form">'.Templates::parse('{{callbackForm}}', true).'</div>
     <div class="tongue">
         <div>
-            <a href="/" class="i0"></a><a href="mailto:'.Core::$params['email'].'" class="i1"></a><a onClick="bookmarkAdd();" href="javascript:void(0);" class="i2"></a>
+            <a href="/" class="i0"></a><a href="/kontakty/" class="i1"></a><a onClick="bookmarkAdd();" href="javascript:void(0);" class="i2"></a>
         </div>
     </div>
     '.(!empty($attachments[0][0]) && !empty($attachments[1][0]) ?  '<div class="title" style="background: url(/images/' . $attachments[1][0] . ') no-repeat;"></div>' : '').'
