@@ -303,13 +303,9 @@ img {
 .photo-gallery-teaser .jcarousel-wrapper {
   position: relative; }
 
-.photo-gallery-teaser .jcarousel {
-  width: 555px;
-  margin: 0 auto; }
-
 .photo-gallery-teaser .jcarousel li {
   width: 168px;
-  margin-right: 25px;
+  margin-right: 12px;
   position: relative;
   text-align: center; }
 
