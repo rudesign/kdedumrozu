@@ -370,6 +370,23 @@ img {
     height: 21px;
     margin: 0 auto;
     background: url("../img/tongue.png") 50% 0 no-repeat; }
+    .teaser .tongue div {
+      position: absolute;
+      width: inherit;
+      text-align: center; }
+      .teaser .tongue div a {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        margin-right: 5px;
+        background: url("../img/micronav.png") no-repeat; }
+        .teaser .tongue div a.i1 {
+          width: 13px;
+          background-position: -11px 0; }
+        .teaser .tongue div a.i2 {
+          background-position: -24px 0; }
+        .teaser .tongue div a:last-child {
+          margin-right: 0; }
   .teaser .title {
     position: absolute;
     top: 80px;
