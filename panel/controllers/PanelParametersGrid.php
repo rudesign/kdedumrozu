@@ -17,11 +17,11 @@ class PanelParametersGrid extends PanelGrid{
             <dt><input name="name" value="'.Core::$item['name'].'" type="text" class="hw" /></dt>
             <dl>E-mail</dl>
             <dt><input name="email" value="'.Core::$item['email'].'" type="text" class="thw" /></dt>
+            <!--
             <dl>Facebook</dl>
             <dt><input name="fb" value="'.Core::$item['fb'].'" type="text" class="fw" /></dt>
             <dl>ВКонтакте</dl>
             <dt><input name="vk" value="'.Core::$item['vk'].'" type="text" class="fw" /></dt>
-            <!--
             <dl>Номер телефона</dl>
             <dt><input name="phone" value="'.Core::$item['phone'].'" type="text" class="thw" /></dt>
             <dl>Twitter</dl>
