@@ -16,9 +16,13 @@ if(!empty(Core::$item['gallery'])){
                 }
                 echo '
                 </ul>
-            </div>
+            </div>';
+            if(count($gallery) > 3) {
+                echo '
             <a href="#" class="jcarousel-controls prev"></a>
-            <a href="#" class="jcarousel-controls next"></a>
+            <a href="#" class="jcarousel-controls next"></a>';
+            }
+        echo '
         </div>
     </div>';
 }
