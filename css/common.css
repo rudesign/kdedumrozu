@@ -458,31 +458,31 @@ img {
       background: url("../img/faces.png") 0 0 no-repeat; }
     .menu a.active, .menu a:hover {
       background-color: #bb0000; }
-    .menu a.f0.active i, .menu a.f0:hover i {
+    .menu a.f59.active i, .menu a.f59:hover i {
       background-position: 0 -52px; }
-    .menu a.f1 i {
+    .menu a.f63 i {
       left: 23px;
       width: 30px;
       background-position: -36px 0; }
-    .menu a.f1.active i, .menu a.f1:hover i {
+    .menu a.f63.active i, .menu a.f63:hover i {
       background-position: -36px -52px; }
-    .menu a.f4 i {
+    .menu a.f60 i {
       left: 20px;
       width: 35px;
       background-position: -66px 0; }
-    .menu a.f4.active i, .menu a.f4:hover i {
+    .menu a.f60.active i, .menu a.f60:hover i {
       background-position: -66px -52px; }
-    .menu a.f3 i {
+    .menu a.f62 i {
       left: 10px;
       width: 46px;
       background-position: -101px 0; }
-    .menu a.f3.active i, .menu a.f3:hover i {
+    .menu a.f62.active i, .menu a.f62:hover i {
       background-position: -101px -52px; }
-    .menu a.f2 i {
+    .menu a.f61 i {
       left: 10px;
       width: 44px;
       background-position: -147px 0; }
-    .menu a.f2.active i, .menu a.f2:hover i {
+    .menu a.f61.active i, .menu a.f61:hover i {
       background-position: -147px -52px; }
 
 .twirl {
