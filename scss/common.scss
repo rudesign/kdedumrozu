@@ -256,7 +256,7 @@ img{
         }
       }
     }
-    &.f2{
+    &.f4{
       i{
         left: 20px;
         width: 35px;
@@ -282,7 +282,7 @@ img{
         }
       }
     }
-    &.f4{
+    &.f2{
       i{
         left: 10px;
         width: 44px;
@@ -367,7 +367,7 @@ img{
 
 .footer{
   height: 180px;
-  background: url("../img/deers.jpg") 50% 0 no-repeat;
+  background: url("../img/deers.jpg") 50% 100% no-repeat;
   font-size: 12px;
   line-height: 1.3em;
   .left{
@@ -392,5 +392,9 @@ img{
         margin-bottom: 0;
       }
     }
+  }
+  &.e404{
+    padding-top: 300px;
+    background-image: url("../img/404.jpg");
   }
 }

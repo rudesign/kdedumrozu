@@ -466,11 +466,11 @@ img {
       background-position: -36px 0; }
     .menu a.f1.active i, .menu a.f1:hover i {
       background-position: -36px -52px; }
-    .menu a.f2 i {
+    .menu a.f4 i {
       left: 20px;
       width: 35px;
       background-position: -66px 0; }
-    .menu a.f2.active i, .menu a.f2:hover i {
+    .menu a.f4.active i, .menu a.f4:hover i {
       background-position: -66px -52px; }
     .menu a.f3 i {
       left: 10px;
@@ -478,11 +478,11 @@ img {
       background-position: -101px 0; }
     .menu a.f3.active i, .menu a.f3:hover i {
       background-position: -101px -52px; }
-    .menu a.f4 i {
+    .menu a.f2 i {
       left: 10px;
       width: 44px;
       background-position: -147px 0; }
-    .menu a.f4.active i, .menu a.f4:hover i {
+    .menu a.f2.active i, .menu a.f2:hover i {
       background-position: -147px -52px; }
 
 .twirl {
@@ -546,7 +546,7 @@ img {
 
 .footer {
   height: 180px;
-  background: url("../img/deers.jpg") 50% 0 no-repeat;
+  background: url("../img/deers.jpg") 50% 100% no-repeat;
   font-size: 12px;
   line-height: 1.3em; }
   .footer .left {
@@ -566,5 +566,8 @@ img {
       margin-bottom: 10px; }
       .footer .right a:last-child {
         margin-bottom: 0; }
+  .footer.e404 {
+    padding-top: 300px;
+    background-image: url("../img/404.jpg"); }
 
 /*# sourceMappingURL=common.css.map */

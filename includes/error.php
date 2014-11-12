@@ -78,19 +78,10 @@ echo '
                 </div>
                 <div class="twirl"></div>
                 <div class="ornament section clearfix">
-                    <h1>Главная страница сайта</h1>
+                    <h1>Отсутствующая страница</h1>
                     <a href="/booking/">Заказать тур</a>
                 </div>
-                <div class="dynamic">
-                    <div class="clearfix">
-                        <div class="ck-body">
-                            <div class="c1" style="height: 200px;">
-                            Страница по этому адресу устарела. Добро пожаловать на <a href="/">стартовую страницу</a>.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer">
+                <div class="footer e404">
                     <div class="wrapper clearfix">
                         <ul class="left">
                             <li>Сделано в <a href="http://rudes.ru" target="_blank">РуДизайн</a></li>
