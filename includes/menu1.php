@@ -7,7 +7,7 @@ $set = Inner::get($query);
 
 $i =0;
 foreach($set as $row) {
-    echo '<a href="/'.$alias.'/" class="'.(Router::$request->parsed->origin[0] == $row['alias'] ? 'active ' : '').'f'.$i.'"><i></i><span>'.$row['name'].'</span></a>';
+    echo '<a href="/'.$row['alias'].'/" class="'.(Router::$request->parsed->origin[0] == $row['alias'] ? 'active ' : '').'f'.$i.'"><i></i><span>'.$row['name'].'</span></a>';
     $i++;
 }
 ?>
