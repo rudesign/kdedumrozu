@@ -460,17 +460,17 @@ img {
       background-color: #bb0000; }
     .menu a.f59.active i, .menu a.f59:hover i {
       background-position: 0 -52px; }
-    .menu a.f63 i {
+    .menu a.f60 i {
       left: 23px;
       width: 30px;
       background-position: -36px 0; }
-    .menu a.f63.active i, .menu a.f63:hover i {
+    .menu a.f60.active i, .menu a.f60:hover i {
       background-position: -36px -52px; }
-    .menu a.f60 i {
+    .menu a.f61 i {
       left: 20px;
       width: 35px;
       background-position: -66px 0; }
-    .menu a.f60.active i, .menu a.f60:hover i {
+    .menu a.f61.active i, .menu a.f61:hover i {
       background-position: -66px -52px; }
     .menu a.f62 i {
       left: 10px;
@@ -478,11 +478,11 @@ img {
       background-position: -101px 0; }
     .menu a.f62.active i, .menu a.f62:hover i {
       background-position: -101px -52px; }
-    .menu a.f61 i {
+    .menu a.f63 i {
       left: 10px;
       width: 44px;
       background-position: -147px 0; }
-    .menu a.f61.active i, .menu a.f61:hover i {
+    .menu a.f63.active i, .menu a.f63:hover i {
       background-position: -147px -52px; }
 
 .twirl {
