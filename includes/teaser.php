@@ -1,9 +1,11 @@
 <?php class_exists('Core', false) or die();
 
+$root = Core::$item['parent'] ? Inner::getById(Router::$request->parsed->origin[0], 'alias') : Core::$item;
+
 $attachments = array();
 
-if(!empty(Core::$item['attachments'])){
-    $attachments = getExplodedGroup(Core::$item['attachments']);
+if(!empty($root['attachments'])){
+    $attachments = getExplodedGroup($root['attachments']);
 }
 
 echo '
