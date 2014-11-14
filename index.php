@@ -8,6 +8,8 @@ define('APP_ROOT', $_SERVER['DOCUMENT_ROOT']);
 define('APP_PATH', '');
 
 try {
+    //xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+
     if(!defined('APP_ROOT')) die('Unable to start: no application root defined');
     if(!defined('APP_PATH')) die('Unable to start: no application path defined');
 
@@ -41,6 +43,15 @@ try {
     ));
 
     echo Templates::parse('baseWrapper');
+
+    /*
+    $xhprof_data = xhprof_disable();
+
+    include_once "/home/www/xhprof/xhprof_lib/utils/xhprof_lib.php";
+    include_once "/home/www/xhprof/xhprof_lib/utils/xhprof_runs.php";
+    $xhprof_runs = new XHProfRuns_Default();
+    $run_id = $xhprof_runs->save_run($xhprof_data, "test");
+    */
 
 } catch (Error $e) {
     error($e);

@@ -11,7 +11,7 @@ echo '
         <div class="section">
             <div class="row-wrapper">
                 <div class="row">
-                    <div class="cell">Тур:</div>
+                    <div class="cell"> К какому волшебнику вы хотите поехать?</div>
                     <div class="cell">
                         <select name="tour" class="w100 customSelect">
                             <option value="0">Не имеет значения</option>';
