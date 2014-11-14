@@ -39,4 +39,6 @@ CKEDITOR.editorConfig = function( config ) {
     config.defaultLanguage = 'ru';
 
     config.autoGrow_maxHeight = '100%';
+
+    config.allowedContent = true;
 };
