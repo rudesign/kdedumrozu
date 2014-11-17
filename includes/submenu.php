@@ -19,8 +19,8 @@ if($rows = Inner::get($query)){
     if ($rows = Inner::get($query)) {
         echo ' <ul class="submenu section">';
         foreach ($rows as $row) {
-
-            echo '<li><a href="/' . $row['alias'] . '/">' . $row['name'] . '</a></li>';
+            $active = Core::$item['alias'] == $row['alias'] ? ' class="active"' : '';
+            echo '<li'.$active.'><a href="/' . $row['alias'] . '/">' . $row['name'] . '</a></li>';
         }
         echo '</ul> ';
     }
