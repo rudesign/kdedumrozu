@@ -16,7 +16,7 @@ class Captcha{
     private function make(){
         $mt = microtime(1);
         $code = substr(md5($mt), 0, 4);
-        $captcha=@imagecreatetruecolor($this->dimensions[0], $this->dimensions[1]);
+        $captcha=imagecreatetruecolor($this->dimensions[0], $this->dimensions[1]);
         $backgroundFill = @imageColorAllocate($captcha, 234, 234, 234);
         imagefill($captcha, 0, 0, $backgroundFill);
         $textColor = @imageColorAllocate($captcha, 0, 0, 0);

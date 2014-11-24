@@ -303,16 +303,18 @@ img {
 .photo-gallery-teaser .jcarousel-wrapper {
   position: relative; }
 
-.photo-gallery-teaser .jcarousel li {
+.photo-gallery-teaser li {
+  display: inline-block;
+  float: left;
   width: 168px;
-  margin-right: 12px;
+  margin: 0 12px 12px 0;
   position: relative;
   text-align: center; }
 
-.photo-gallery-teaser .jcarousel li:last-child {
+.photo-gallery-teaser li:nth-child(3n) {
   margin-right: 0; }
 
-.photo-gallery-teaser .jcarousel li .teaser {
+.photo-gallery-teaser li .teaser {
   display: block;
   width: 90%;
   margin: 6px auto 0; }

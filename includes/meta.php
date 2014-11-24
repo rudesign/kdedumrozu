@@ -37,7 +37,7 @@ if(Core::$item){
 
 }
 
-if($_GET['page']) Core::$params['title'] .= '. Стр. '.(intval($_GET['page'])+1);
+if(!empty($_GET['page'])) Core::$params['title'] .= '. Стр. '.(intval($_GET['page'])+1);
 
 if($_SERVER['REQUEST_URI'] != '/') Core::$params['title'] .= ' – '.Core::$params['name'];
 

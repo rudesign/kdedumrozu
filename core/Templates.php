@@ -37,6 +37,7 @@ class Templates extends Users{
             $parsed = array_shift($html);
 
             foreach($html as $part){
+
                 $HTMLtoProcess = explode('}}', $part);
 
                 if($incBlock = array_shift($HTMLtoProcess)){

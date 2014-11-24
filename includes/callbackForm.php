@@ -1,5 +1,6 @@
 <?php class_exists('Core', false) or die();
 
+
 if(!class_exists('Captcha', false)) new Captcha();
 
 echo '
@@ -37,4 +38,3 @@ echo '
     </form>
 </div>
 ';
-?>
