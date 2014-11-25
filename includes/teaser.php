@@ -9,7 +9,7 @@ if(!empty($root['attachments'])){
 }
 
 echo '
-<div class="teaser"'.(!empty($attachments[0][0]) && !empty($attachments[1][0]) ?  ' style="background: url(/images/' . $attachments[0][0] . ') no-repeat;"' : '').'>
+<div class="teaser"'.(!empty($attachments[0][0]) ?  ' style="background: url(/images/' . $attachments[0][0] . ') no-repeat;"' : '').'>
     <div class="callback-form">'.Templates::parse('{{callbackForm}}', true).'</div>
     <div class="tongue">
         <div>
