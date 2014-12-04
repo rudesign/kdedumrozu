@@ -342,24 +342,31 @@ img{
 }
 
 .submenu{
+  position: relative;
+  width: 238px;
+  right: -1px;
   font-size: 14px;
-  li{
-    padding-left: 30px;
-    transition: $transition;
-    &.active,
-    &:hover{
-      background: url("../img/submenu.png") 0 50% no-repeat;
-      a{
-        color: white;
+  ul{
+    padding: 4px 0;
+    background: url("../img/submenu1.png") repeat-y;
+    li{
+      padding-left: 30px;
+      &.active,
+      &:hover{
+        background: url("../img/submenuActive.png") 6px 50% no-repeat;
       }
     }
+    a{
+      display: inline-block;
+      width: 100%;
+      padding: 8px 0;
+      color: white;
+      text-decoration: none;
+    }
   }
-  a{
-    display: inline-block;
-    width: 100%;
-    padding: 8px 0;
-    color: $green;
-    text-decoration: none;
+  .fold{
+    background: url("../img/submenuFold.png") 100% 0 no-repeat;
+    height: 8px;
   }
 }
 
