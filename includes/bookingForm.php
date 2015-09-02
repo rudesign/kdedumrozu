@@ -118,6 +118,12 @@ echo '
                     <div class="cell"><input name="phone" type="text" class="w100" /></div>
                 </div>
             </div>
+            <div class="row-wrapper">
+                <div class="row">
+                    <div class="cell">Промо-код:</div>
+                    <div class="cell"><input name="promocode" type="text" class="w50" /></div>
+                </div>
+            </div>
         </div>
         <div class="section">
             <div class="row-wrapper">
@@ -142,7 +148,7 @@ echo '
         <div class="row">
             <div class="cell"></div>
             <div class="cell">
-                <div class="l"><button onclick="return submitBookingForm();;" class="buttons" opt="Подождите...">Отправить</button></div>
+                <div class="l"><button onclick="return submitBookingForm();" class="buttons" opt="Подождите...">Отправить</button></div>
                 <!--<div class="r" style="padding-top: 7px;"><a onclick="$(\'.booking-form form\').clearForm();" href="javascript:void(0);">Очистить форму</a></div>-->
             </div>
         </div>

@@ -9,10 +9,8 @@ class PanelInnerGrid extends PanelGrid{
         parent::__construct();
 
         $this->checkboxes = array(
-            'tour',
             'menu',
             'sitemap',
-            'footer',
         );
     }
 
@@ -25,7 +23,8 @@ class PanelInnerGrid extends PanelGrid{
             <dl>Название</dl>
             <dt><input name="name" value="'.Core::$item['name'].'" type="text" class="fw" /></dt>
             <dt>
-                <input name="tour" value="1" type="checkbox"'.$this->checkboxes['tour']['checked'].' /><label>в основном меню</label>
+                <input name="menu" value="1" type="checkbox"'.$this->checkboxes['menu']['checked'].' /><label>показывать в меню в правой колонке</label>
+                <input name="sitemap" value="1" type="checkbox"'.$this->checkboxes['sitemap']['checked'].' /><label>показывать в карте сайта</label>
             </dt>
             <dl>Вышележащий раздел</dl>';
             $query = Inner::set();
@@ -56,10 +55,6 @@ class PanelInnerGrid extends PanelGrid{
             <dl>URI-эквивалент (относительный адрес, начиная с /)</dl>
             <dt><input name="equivalent" value="'.Core::$item['equivalent'].'" type="text" class="fw" /></dt>
             -->
-            <dt>
-                <input name="menu" value="1" type="checkbox"'.$this->checkboxes['menu']['checked'].' /><label>показывать в меню в правой колонке</label>
-                <input name="sitemap" value="1" type="checkbox"'.$this->checkboxes['sitemap']['checked'].' /><label>показывать в карте сайта</label>
-            </dt>
             <dl>Дата публикации</dl>
             <dt>'.showDateSelector(Core::$item['pubTime'], '_').'</dt>
 

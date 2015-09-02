@@ -40,6 +40,7 @@ class Ajaj{
         if(!empty($_POST['secondName'])) $data[] = array('name'=>'Отчество', 'value'=>$_POST['secondName']);
         if(!empty($_POST['email'])) $data[] = array('name'=>'E-mail', 'value'=>$_POST['email']);
         if(!empty($_POST['phone'])) $data[] = array('name'=>'Телефон', 'value'=>$_POST['phone']);
+        if(!empty($_POST['promocode'])) $data[] = array('name'=>'Промо-код', 'value'=>$_POST['promocode']);
         if(!empty($_POST['cName'])) $data[] = array('name'=>'Название компании', 'value'=>$_POST['cName']);
         if(!empty($_POST['fax'])) $data[] = array('name'=>'Факс', 'value'=>$_POST['fax']);
 

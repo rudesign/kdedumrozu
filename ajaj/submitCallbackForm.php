@@ -20,7 +20,6 @@ class Ajaj{
     private function execute(){
 
         $data = array();
-
         $data[] = array('name'=>'Тема', 'value'=>'Просьба позвонить');
         if(!empty($_POST['name'])) $data[] = array('name'=>'Имя', 'value'=>$_POST['name']);
         if(!empty($_POST['phone'])) $data[] = array('name'=>'Номер телефона', 'value'=>$_POST['phone']);
